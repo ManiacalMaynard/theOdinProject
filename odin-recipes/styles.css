@@ -106,6 +106,7 @@ footer {
 
 .card {
   width: 100%;
+  overflow: hidden;
   border: 0px #333 solid;
   border-radius: 1rem;
   background-color: var(--yellow-light);
