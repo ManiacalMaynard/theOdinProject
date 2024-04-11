@@ -1,0 +1,107 @@
+/* ----- SUPER BASIC RESET & ROOT ----- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* border: 1px pink solid; */
+}
+
+:root {
+  --yellow-dark: hsl(40, 80%, 30%);
+  --yellow-medium: hsl(40, 80%, 70%);
+  --yellow-light: hsl(40, 80%, 95%);
+  --blue-dark: hsl(180, 80%, 30%);
+  --not-black: hsl(0, 0%, 20%);
+  --not-white: hsl(0, 0%, 99%);
+  font-family: 'Lato Sans', 'Roboto Sans', 'Segoe UI', Geneva, Verdana,
+    sans-serif;
+  font-size: 1rem;
+}
+
+/* ----- ALL BLOCK ELEMENTS ----- */
+
+body {
+  background-color: var(--not-white);
+  color: var(--not-black);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Macondo Swash Caps', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--not-black);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--blue-dark);
+}
+
+/* ----- ALL SEMANTIC ELEMENTS ----- */
+
+header {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----- CUSTOM CLASSES ----- */
+
+.header-icons {
+  font-size: 2rem;
+}
+
+.recipe-main {
+  width: 80vw;
+  height: 20rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--yellow-dark);
+  border: 0px #333 solid;
+  border-radius: 1rem;
+}
+
+.recipe-main > img {
+  height: 100%;
+  border: 0px var(--not-black) solid;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.main-photo > a {
+  font-weight: bold;
+}
+
+.recipe-title {
+  padding: 1rem 3rem;
+  color: var(--not-white);
+}
+
+.recipe-title > h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
