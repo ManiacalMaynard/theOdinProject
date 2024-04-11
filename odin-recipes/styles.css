@@ -17,9 +17,6 @@
   --blue-dark: hsl(180, 80%, 30%);
   --not-black: hsl(0, 0%, 20%);
   --not-white: hsl(0, 0%, 99%);
-  font-family: 'Lato Sans', 'Roboto Sans', 'Segoe UI', Geneva, Verdana,
-    sans-serif;
-  font-size: 1rem;
 }
 
 /* ----- ALL BLOCK ELEMENTS ----- */
@@ -31,6 +28,8 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  font-family: 'Quicksand', 'Roboto Sans', 'Segoe UI', Geneva, Verdana,
+    sans-serif;
 }
 
 h1,
@@ -38,8 +37,12 @@ h2,
 h3,
 h4 {
   font-family: 'Macondo Swash Caps', cursive;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+}
+
+li {
+  padding-top: 0.5rem;
 }
 
 i {
@@ -47,13 +50,11 @@ i {
 }
 
 a {
+  color: var(--blue-dark);
   text-decoration: none;
-  color: var(--not-black);
 }
 
 a:hover {
-  text-decoration: none;
-  color: var(--blue-dark);
 }
 
 /* ----- ALL SEMANTIC ELEMENTS ----- */
@@ -65,12 +66,45 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: var(--not-white);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--not-black);
 }
 
 /* ----- CUSTOM CLASSES ----- */
 
 .header-icons {
   font-size: 2rem;
+}
+
+.recipe-cards {
+  padding-top: 2rem;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  width: 100%;
+  border: 0px #333 solid;
+  border-radius: 1rem;
+  background-color: var(--yellow-light);
+}
+
+.card > img {
+  max-width: 100%;
+  border: 0px var(--not-black) solid;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card > h3 {
+  padding: 1rem;
 }
 
 .recipe-main {
@@ -104,4 +138,26 @@ header {
 .recipe-title > h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
+}
+
+.instructions {
+  width: 80vw;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+}
+
+.instructions > div {
+  padding: 1rem;
+}
+
+.ingredients {
+  width: 40%;
+}
+
+.steps {
+  width: 60%;
 }
