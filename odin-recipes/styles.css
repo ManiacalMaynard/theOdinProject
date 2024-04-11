@@ -76,6 +76,20 @@ header a {
   color: var(--not-black);
 }
 
+footer {
+  margin-top: 1rem;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--not-black);
+  color: var(--not-white);
+}
+
 /* ----- CUSTOM CLASSES ----- */
 
 .header-icons {
