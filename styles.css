@@ -1,0 +1,20 @@
+/* ----- SUPER BASIC RESET & ROOT ----- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* border: 1px pink solid; */
+}
+
+:root {
+  --yellow-dark: hsl(40, 80%, 30%);
+  --yellow-medium: hsl(40, 80%, 70%);
+  --yellow-light: hsl(40, 80%, 95%);
+  --blue-dark: hsl(180, 80%, 30%);
+  --not-black: hsl(0, 0%, 20%);
+  --not-white: hsl(0, 0%, 99%);
+}
